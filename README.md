@@ -3,6 +3,6 @@ An analysis of physical appearance in various translations of Sleeping Beauty us
 
 Online version: https://limmlingg.github.io/voyantfairytales/
 
-Word Count: About 950 excluding Referencess
+Word Count: About 950 excluding References
 
 Done for GET1030 Digital Humanities in Arts Research
