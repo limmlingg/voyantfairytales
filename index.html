@@ -1,0 +1,106 @@
+<head>
+	<title>Tales of Fairies & Feminism</title>
+	<!-- Favicon from www.iconj.com -->
+	<link rel="shortcut icon" href="http://www.iconj.com/icon.php?pid=aoa8p6pvn6" type="image/x-icon" /> 
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Tajawal" rel="stylesheet">
+
+	<style>
+		a {
+			color: #666;
+			text-decoration: none;
+		}
+		a:hover {
+			background-color: #0bd;
+			color: white;
+		}
+		body {
+			/* Background Pattern from www.heropatterns.com */
+			background-color: #ffffff;
+			background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23b2e0ea' fill-opacity='0.49' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+			font-family: 'Tajawal', sans-serif;
+			font-size: 130%;
+			padding: 0% 10%;
+			/*text-align: center;*/
+		}
+		div {
+			padding: 1% 0% 0% 0%;
+		}
+		h1 {
+			font-family: 'Pacifico', cursive;
+			font-size: 250%;
+		}
+		iframe {
+			height: 400px;
+			width: 750px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tales of Fairies & Feminism</h1>
+	<h3>An analysis of physical appearance in various translations of Sleeping Beauty using Voyant Tools</h3>
+
+	<hr>
+
+	<div>
+		<h2>Background</h2>
+		<p>Aside from teaching children how to read, fairy tales serve another important purpose: to teach children about the beliefs and principles of their culture <i>(Stephens & McCallum, 2013)</i>. Hence, the different morals found in each fairy tale (and each different version of the same fairy tale) serves as a reflection of the beliefs of the people who have contributed to the production of the fairy tale, be it the original writers, the rewriters or the translators.<i>(Bacchilega, 1999)</i></p>
+		<p>Since the 1970s, analysing feminist themes in fairy tales is a significant part of sociological discussions <i>(Haase, 2004)</i>, as they illustrate society's perspective of women during their times <i>(Bacchilega, 1999)</i>.</p>
+	</div>
+
+	<div>
+		<h2>Objective</h2>
+		<p>A 2003 study conducted by Baker-Sperry and Grauerholz analysed the frequency of descriptions of appearance in the Grimm Brothers' fairy tales, using translations by Jack Zipes. However, different translations would likely have differing frequencies, as even the Grimm Brothers themselves had heavily modified the stories when making their famous anthology of fairy tales <i>(Tatar, 2003)</i>.</p>
+		<p>The aim is to check for disparity between translations using the textual statistics tool <a href="http://voyant-tools.org/">Voyant Tools</a>. For consistency, one fairy tale was used: Sleeping Beauty, as it is one of the most reproduced fairy tales <i>(Baker-Sperry & Grauerholz, 2003)</i> and can be found in full in many versions. 4 different translations over the years 1812 to 2002 were found from various educational sites about fairy tales.</p>
+	</div>
+
+	<div>
+		<h2>Frequency of Beauty Terms</h2>
+		<p>In the study, they defined the words 'beautiful', 'pretty', and the 'fairest' as descriptive of a woman's appearance. The same words were used in this analysis.</p>
+		<iframe src='https://voyant-tools.org/tool/Trends/?query=pretty&query=lovely&query=beaut*%7Cpretty%7Cfair%7Cfairest%7Clovely&query=beaut*&query=beaut*%7Cpretty%7Cfair%7Cfairest&query=beau*&query=fair%7Cfairest&withDistributions=raw&bins=4&corpus=90cacb56d07575109e9cf2c32ac55d63'></iframe>
+		<p>The search term <b>beaut*</b> was used to find words beginning with 'beaut', namely 'beauty' and 'beautiful'. The same method could not be used to search for 'fair' or 'fairest' as some of the translations used the word 'fairies', so <b>fair|fairest</b> was used to search for those two terms. The term <b>beaut*|pretty|fair|fairest</b> is used to sum up the total number of times those descriptive words were used.</p>
+		<p>Overall (using the line for <b>beaut*|pretty|fair|fairest</b>), all versions had a similar amount of usage of these descriptive words, except for the 1922 Lucy Crane translation. However, in that translation, the word 'lovely' was used in place of 'beautiful' multiple times. While it is not clear if 'lovely' can be considered a description of a woman's appearance, all versions will have almost the same usage if 'lovely' is added (using the line for <b>beaut*|pretty|fair|fairest|lovely</b>).</p>
+	</div>
+	<div>
+		<h2>Correlation of Beauty Terms</h2>
+		<p>Not all of those terms might have been used to describe characters. <a href="http://voyant-tools.org/">Voyant Tools</a> has a feature to find correlation between words, which might identify what these words were used to describe.</p>
+		<iframe src='https://voyant-tools.org/tool/Correlations/?query=beautiful&corpus=90cacb56d07575109e9cf2c32ac55d63'></iframe>
+		<p>Unfortunately, this function does not seem to work well with short texts (1283 to 1514 words) like fairy tales. The words that are most correlated with 'beautiful' (their usage increases with the usage of 'beautiful') seem to be unrelated, whereas relevant words like 'princess' have a negative correlation with 'beautiful' (the usage of 'princess' decreases as 'beautiful' increases).</p>
+		<p>Fortunately, <a href="http://voyant-tools.org/">Voyant Tools</a> is also able to show the context in which the words are used.</p>
+		<iframe src='https://voyant-tools.org/tool/Contexts/?query=beaut*%7Cpretty%7Cfair%7Cfairest&corpus=90cacb56d07575109e9cf2c32ac55d63'></iframe>
+		<p>The search term <b>beaut*|pretty|fair|fairest</b> was used to find the context for all occurrences of these words. For most cases, only a small number of words before and after is needed to determine if the words were used to describe a character. However, the part where the fairies (or Wise Women in certain translations) bestow beauty and other gifts onto the main character requires more words for context.</p>
+		<p>The 1812 Marian Edwardes translation has 5 references to the appearance of the main character, the 1884 Margaret Hunt translation has 7, the 1922 Lucy Crane translation has 4 references (7 if counting 'lovely') and the 2002 D. L. Ashliman translation has 7. The mode (7) is very close to Baker-Sperry and Grauerholz's study, where they found 7.2 references to women's beauty per story for tales that have been reproduced more than 100 times. Overall, there seems to be a very slight increase in the description of women's beauty over the years, and a low variance between different translations. However, given the small sample size, more research is needed to make a conclusion.</p>
+	</div>
+
+	<div>
+		<h2>Evaluation of Voyant Tools</h2>
+		<p><a href="http://voyant-tools.org/">Voyant Tools</a> was useful in analysing different texts over time, as it can show the usage of terms over multiple documents. The feature to toggle the visibility of certain lines in the trend is especially useful for terms that might be debatable, as it shows both results whether or not 'lovely' is considered a description of a person's appearance.</p>
+		<p>However, it is not the best tool for analysing different translations of multiple fairy tales as there is no way to organise documents by translator or tale. This limits the analysis to multiple translations of one fairy tale or multiple fairy tales by one translator.</p>
+		<p>While the context tool was useful in identifying the context of the terms used, it requires a person to look through the words before and after. There is also no option to select the contexts that are relevant and put them in a graph to analyse, so this had to be performed manually. This is troublesome for analysing words with extremely high frequencies, especially since frequently reproduced tales have an average of over 35 references to male and female appearance per tale <i>(Baker-Sperry & Grauerholz, 2003)</i>.</p>
+	</div>
+
+	<div>
+		<h2>Conclusion</h2>
+		<p>Overall, <a href="http://voyant-tools.org/">Voyant Tools</a> was somewhat helpful in reinforcing existing literature about feminism in the Grimm Brothers' fairy tales. The results showed that the usage of descriptive terms in different translations of Sleeping Beauty were very similar. Further research is needed, preferably with other textual analysis tools to complement <a href="http://voyant-tools.org/">Voyant Tools</a> and account for its drawbacks.</p>
+	</div>
+
+	<div class="refs">
+		<h2>References</h2>
+		<h3>Studies</h3>
+		<ul>
+			<li>Bacchilega, C. (1999). <i>Postmodern Fairy Tales: Gender and Narrative Strategies</i>. University of Pennsylvania Press. Retrieved from http://books.google.com</li>
+			<li>Baker-Sperry, L., Grauerholz, L. (2003). <i>The Pervasiveness and Persistence of the Feminine Beauty Ideal in Childrens Fairy Tales</i>. Gender & Society, 17(5), 711-726. doi:10.1177/0891243203255605</li>
+			<li>Haase, D. (2004). <i>Fairy Tales and Feminism: New Approaches</i>. Detroit: Wayne State University Press. Retrieved from http://books.google.com</li>
+			<li>Stephens, J., McCallum, R. (2013). <i>Retelling Stories, Framing Culture: Traditional Story and Metanarratives in Children's Literature</i>. Retrieved from http://books.google.com</li>
+			<li>Tatar, M. (2003). <i>The hard facts of the Grimms fairy tales</i>. Princeton: University Press. Retrieved from http://resources.seattlecentral.edu</li>
+		</ul>
+		<h3>Translations</h3>
+		<ul>
+			<li>1812 - Marian Edwardes translation (based on Edgar Taylor's translation): <a href="http://www.literaturepage.com/read/grimms-fairy-tales.html">http://www.literaturepage.com/read/grimms-fairy-tales.html</a></li>
+			<li>1884 - Margaret Hunt translation: <a href="http://www.surlalunefairytales.com/authors/grimms.html">http://surlalunefairytales.com/authors/grimms.html</a></li>
+			<li>1922 - Lucy Crane translation: <a href="http://www.gutenberg.org/files/19068/19068-h/19068-h.htm">http://www.gutenberg.org/files/19068/19068-h/19068-h.htm</a></li>
+			<li>2002 - D. L. Ashliman translation: <a href="https://www.pitt.edu/~dash/grimmtales.html">http://www.pitt.edu/~dash/grimmtales.html</a></li>
+		</ul>
+	</div>
+</body>
